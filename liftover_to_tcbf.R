@@ -1,0 +1,11 @@
+#SET WORKING DIRECTORY TO LOCATION W/ LIFTOVER-DERIVED CONSERVED BOUNDARIES (W/ LEVELS)
+library(rtracklayer)
+LC <- import("NPB_boundaries_cons2.bed",format="BED")
+MC <- import("NPB_boundaries_cons3.bed",format="BED")
+C <- import("NPB_boundaries_cons4.bed",format="BED")
+HC <- import("NPB_boundaries_cons5.bed",format="BED")
+
+length(LC) #number of LC boundaries from LiftOver (Amina's paper)
+length(MC) #number of MC boundaries from LiftOver (Amina's paper)
+length(C) #number of C boundaries from LiftOver (Amina's paper)
+length(HC) #number of HC boundaries from LiftOver (Amina's paper)
